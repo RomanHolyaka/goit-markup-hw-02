@@ -104,9 +104,14 @@ body {
   box-shadow: var(--third-button-color);
   border-radius: 4px;
 }
+.hero-btn {
+  cursor: pointer;
+}
+
 .hero {
   background-color: var(--first-background-color);
 }
+
 /*-------опис якостей------*/
 
 /*.feature-title {
@@ -126,9 +131,8 @@ body {
   color: var(--fourth-text-color);
 }
 .feature-text {
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
@@ -161,7 +165,6 @@ body {
   color: var(--fourth-text-color);
 }
 .team-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -170,6 +173,9 @@ body {
 }
 .team {
   background-color: var(--second-background-color);
+}
+.team-name {
+  background-color: var(--main-title-color);
 }
 /*----------FOOTER-------*/
 .footer-logo {
@@ -202,4 +208,43 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-text-color);
+}
+
+/*---------ПОРТФОЛИО-MAIN--------------*/
+
+/*-------BUTTON--------*/
+.mainhero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-button-color);
+}
+.mainhero-btn {
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+}
+.mainhero-btn:hover,
+.mainhero-btn:focus {
+  color: var(--first-button-color);
+  background-color: var(--third-background-color);
+}
+.mainhero-btn {
+  cursor: pointer;
+}
+
+/*----PICTURES----*/
+.mainhero-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--first-header-text-color);
+}
+.mainhero-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-header-text-color);
 }
