@@ -9,6 +9,7 @@
 
   --first-button-color: #ffffff;
   --second-button-color: #212121;
+  --third-button-color: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   --first-header-text-color: #212121;
   --second-header-text-color: #757575;
@@ -18,10 +19,16 @@
   --third-logo-color: #ffffff;
 
   --accent-text-color: #2196f3;
+
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --third-background-color: #2196f3;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #757575;
 }
 
 .list {
@@ -40,6 +47,9 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--second-logo-color);
+}
+.colortext-web {
   color: var(--first-logo-color);
 }
 
@@ -50,14 +60,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-header-text-color);
 }
-.header-link:hover,
-.header-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-text-color);
-}
 
 .header-mail,
 .header-tel {
@@ -66,6 +68,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-header-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-text-color);
 }
 
 /*----------Oсновний блок------------*/
@@ -78,10 +89,6 @@ body {
   text-transform: uppercase;
   color: var(--main-title-color);
 }
-.hero {
-  background-color: #2f303a;
-}
-
 .hero-btn {
   font-weight: 400;
   font-size: 16px;
@@ -92,7 +99,14 @@ body {
   letter-spacing: 0.06em;
   color: var(--first-button-color);
 }
-
+.hero-btn {
+  background: var(--third-background-color);
+  box-shadow: var(--third-button-color);
+  border-radius: 4px;
+}
+.hero {
+  background-color: var(--first-background-color);
+}
 /*-------опис якостей------*/
 
 /*.feature-title {
@@ -154,16 +168,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+.team {
+  background-color: var(--second-background-color);
+}
 /*----------FOOTER-------*/
 .footer-logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--first-logo-color);
+  color: var(--third-logo-color);
 }
 
 .footer-map {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -171,6 +189,7 @@ body {
   color: var(--third-text-color);
 }
 .footer-link {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -179,4 +198,8 @@ body {
 }
 .footer {
   background-color: #2f303a;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-text-color);
 }
